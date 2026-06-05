@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { generateWatchlist, generateSignals } from '@/lib/mockData';
-import { DEFAULT_RISK_SETTINGS } from '@/lib/types';
+import { DEFAULT_RISK_SETTINGS } from '@/lib/mockData';
 
 export async function GET() {
   const tkrs = generateWatchlist();

@@ -2,7 +2,8 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { DEFAULT_RISK_SETTINGS, BrokerConfig } from '@/lib/types';
+import { BrokerConfig } from '@/lib/types';
+import { DEFAULT_RISK_SETTINGS } from '@/lib/mockData';
 
 const MOCK_BROKERS: BrokerConfig[] = [
   { id: '1', name: 'Binance', enabled: true, apiKey: 'xxxx-xxxx-xxxx-1234', apiSecret: 'xxxx-xxxx-xxxx-5678', connected: true, lastChecked: new Date().toISOString(), permissions: ['read', 'trade'] },

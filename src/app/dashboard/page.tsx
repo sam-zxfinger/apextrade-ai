@@ -52,7 +52,7 @@ export default function Dashboard() {
     return () => clearInterval(interval);
   }, []); // eslint-disable-line
 
-  const showToast = (msg: string, type: 'signal' | 'entry' | 'exit' | 'warning' | 'error' = 'info') => {
+  const showToast = (msg: string, type: 'signal' | 'entry' | 'exit' | 'warning' | 'error' | 'info' = 'info') => {
     const id = Math.random().toString(36).substr(2, 9);
     setToasts(prev => [...prev, { id, msg, type }]);
     setTimeout(() => setToasts(prev => prev.filter(t => t.id !== id)), 4000);
